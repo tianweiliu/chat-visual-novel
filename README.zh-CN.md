@@ -109,3 +109,5 @@
 ## LICENSE
 
 This code is distributed under the MIT license. See [LICENSE](./LICENSE) in this directory.
+
+中文版原神 AI 语音合成由 [yuanshenai.com](https://yuanshenai.com) 提供。

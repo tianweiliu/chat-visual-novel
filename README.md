@@ -113,3 +113,5 @@ With these steps completed, your ChatVisualNovel will be deployed on Vercel with
 ## LICENSE
 
 This code is distributed under the MIT license. See [LICENSE](./LICENSE) in this directory.
+
+AI Text-to-speech demo provided by [yuanshenai.com](https://yuanshenai.com) and is only available in Chinese.

@@ -1,86 +1,66 @@
 {
-  "genres": ["romance", "fantasy", "horror", "sci-fi", "crime"],
-  "player": {
-    "images": {
-      "neutral": "https://assets.chatvisualnovel.com/00144-1619487309.png",
-      "happy": "https://assets.chatvisualnovel.com/00089-1619487309.png",
-      "sad": "https://assets.chatvisualnovel.com/00091-1619487309.png",
-      "suprised": "https://assets.chatvisualnovel.com/00093-1619487309.png",
-      "closed_eyes": "https://assets.chatvisualnovel.com/00095-1619487309.png"
+  "genres": ["genshin_doujin"],
+  "characters": {
+    "traveler": {
+      "isPlayer": true,
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/lumine.png"
+      }
+    },
+    "paimon": {
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/paimon.png"
+      }
+    },
+    "amber": {
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/amber.png"
+      }
+    },
+    "hutao": {
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/hutao.png"
+      }
+    },
+    "klee": {
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/klee.png"
+      }
     }
   },
-  "playerGender": "male",
-  "girls": [
-    {
-      "images": {
-        "neutral": "https://assets.chatvisualnovel.com/00055-3317647877.png",
-        "happy": "https://assets.chatvisualnovel.com/00057-3317647877.png",
-        "sad": "https://assets.chatvisualnovel.com/00059-3317647877.png",
-        "closed_eyes": "https://assets.chatvisualnovel.com/00061-3317647877.png",
-        "suprised": "https://assets.chatvisualnovel.com/00063-3317647877.png"
-      }
-    },
-    {
-      "images": {
-        "neutral": "https://assets.chatvisualnovel.com/00063-3415190727.png",
-        "happy": "https://assets.chatvisualnovel.com/00065-3415190727.png",
-        "sad": "https://assets.chatvisualnovel.com/00067-3415190727.png",
-        "suprised": "https://assets.chatvisualnovel.com/00071-3415190727.png",
-        "closed_eyes": "https://assets.chatvisualnovel.com/00073-3415190727.png"
-      }
-    },
-    {
-      "images": {
-        "neutral": "https://assets.chatvisualnovel.com/00073-645522131.png",
-        "happy": "https://assets.chatvisualnovel.com/00075-645522131.png",
-        "sad": "https://assets.chatvisualnovel.com/00077-645522131.png",
-        "suprised": "https://assets.chatvisualnovel.com/00079-645522131.png",
-        "closed_eyes": "https://assets.chatvisualnovel.com/00081-645522131.png"
-      }
-    }
-  ],
   "places": {
-    "street": {
-      "image": "https://assets.chatvisualnovel.com/00024-3109134467.png"
+    "mondstadt": {
+      "image": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/places/mondstadt.webp",
+      "bgm": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/music/01+-+Genshin+Impact+Main+Theme.mp3"
     },
-    "room": {
-      "image": "https://assets.chatvisualnovel.com/00115-1693129910.png"
+    "liyue": {
+      "image": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/places/liyue.webp"
     },
-    "lobby": {
-      "image": "https://assets.chatvisualnovel.com/00007-2952547515.png"
+    "inazuma": {
+      "image": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/places/inazuma.webp"
     },
-    "garden": {
-      "image": "https://assets.chatvisualnovel.com/00117-1865753899.png"
-    },
-    "restaurant": {
-      "image": "https://assets.chatvisualnovel.com/00146-2156326714.png"
-    },
-    "school": {
-      "image": "https://assets.chatvisualnovel.com/00068-792831435.png"
+    "sumeru": {
+      "image": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/places/sumeru.webp"
     }
   },
   "imageSettings": {
     "left": "50%",
     "transform": "translate(-50%, 0)",
-    "bottom": "100%",
-    "maxWidth": "70vw",
-    "maxHeight": "70vh"
+    "bottom": "0",
+    "maxWidth": "100vw",
+    "maxHeight": "90vh"
   },
   "tts": {
-    "default": {
-      "method": "HuggingFaceSpace",
-      "url": "https://plachta-vits-umamusume-voice-synthesizer.hf.space",
-      "ws": {
-        "url": "wss://plachta-vits-umamusume-voice-synthesizer.hf.space/queue/join",
-        "data": ["text", "voice", "localeLanguage", "speed", "phonemeInput"]
+    "zh-CN": {
+      "method": "GET",
+      "url": "https://ai-api.baimianxiao.cn/tts",
+      "params": {
+        "speaker": "speaker",
+        "text": "text",
+        "additionalParams": "&format=wav&length=1&noise=0.6&noisew=0.8"
       },
       "voices": {
-        "male": ["重云 Chongyun (Genshin Impact)"],
-        "female": [
-          "甘雨 Ganyu (Genshin Impact)",
-          "宵宫 Yoimiya (Genshin Impact)",
-          "珊瑚宫心海 Sangonomiya Kokomi (Genshin Impact)"
-        ]
+        "female": ["派蒙", "安柏", "胡桃", "可莉"]
       }
     }
   }
