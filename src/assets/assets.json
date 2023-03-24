@@ -1,87 +1,57 @@
 {
-  "genres": ["romance", "fantasy", "horror", "sci-fi", "crime"],
-  "player": {
-    "images": {
-      "neutral": "https://assets.chatvisualnovel.com/00144-1619487309.png",
-      "happy": "https://assets.chatvisualnovel.com/00089-1619487309.png",
-      "sad": "https://assets.chatvisualnovel.com/00091-1619487309.png",
-      "suprised": "https://assets.chatvisualnovel.com/00093-1619487309.png",
-      "closed_eyes": "https://assets.chatvisualnovel.com/00095-1619487309.png"
+  "genres": ["ace_attorney_doujin"],
+  "characters": {
+    "phoenix_wright": {
+      "isPlayer": true,
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/ace_attorney/2014PhoenixStandTalk.webp",
+        "objection": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/ace_attorney/objection.webp"
+      },
+      "imageSettings": {
+        "left": "0",
+        "transform": "translate(0, 20%)"
+      }
+    },
+    "miles_edgeworth": {
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/ace_attorney/Edgeworth-Court-NormalHD-02.webp",
+        "objection": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/ace_attorney/objection.webp"
+      },
+      "imageSettings": {
+        "right": "0",
+        "transform": "translate(0, 18%)"
+      }
+    },
+    "judge": {
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/ace_attorney/AJJudgeStandTalk.webp"
+      },
+      "imageSettings": {
+        "left": "50%",
+        "transform": "translate(-50%, 33%)",
+        "bottom": "100%"
+      }
+    },
+    "maya_fey": {
+      "images": {
+        "neutral": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/characters/ace_attorney/Maya-Normal-2-HD.webp"
+      },
+      "imageSettings": {
+        "left": "50%",
+        "transform": "translate(-50%, 0)",
+        "bottom": "100%"
+      }
     }
   },
-  "playerGender": "male",
-  "girls": [
-    {
-      "images": {
-        "neutral": "https://assets.chatvisualnovel.com/00055-3317647877.png",
-        "happy": "https://assets.chatvisualnovel.com/00057-3317647877.png",
-        "sad": "https://assets.chatvisualnovel.com/00059-3317647877.png",
-        "closed_eyes": "https://assets.chatvisualnovel.com/00061-3317647877.png",
-        "suprised": "https://assets.chatvisualnovel.com/00063-3317647877.png"
-      }
-    },
-    {
-      "images": {
-        "neutral": "https://assets.chatvisualnovel.com/00063-3415190727.png",
-        "happy": "https://assets.chatvisualnovel.com/00065-3415190727.png",
-        "sad": "https://assets.chatvisualnovel.com/00067-3415190727.png",
-        "suprised": "https://assets.chatvisualnovel.com/00071-3415190727.png",
-        "closed_eyes": "https://assets.chatvisualnovel.com/00073-3415190727.png"
-      }
-    },
-    {
-      "images": {
-        "neutral": "https://assets.chatvisualnovel.com/00073-645522131.png",
-        "happy": "https://assets.chatvisualnovel.com/00075-645522131.png",
-        "sad": "https://assets.chatvisualnovel.com/00077-645522131.png",
-        "suprised": "https://assets.chatvisualnovel.com/00079-645522131.png",
-        "closed_eyes": "https://assets.chatvisualnovel.com/00081-645522131.png"
-      }
-    }
-  ],
   "places": {
-    "street": {
-      "image": "https://assets.chatvisualnovel.com/00024-3109134467.png"
-    },
-    "room": {
-      "image": "https://assets.chatvisualnovel.com/00115-1693129910.png"
-    },
-    "lobby": {
-      "image": "https://assets.chatvisualnovel.com/00007-2952547515.png"
-    },
-    "garden": {
-      "image": "https://assets.chatvisualnovel.com/00117-1865753899.png"
-    },
-    "restaurant": {
-      "image": "https://assets.chatvisualnovel.com/00146-2156326714.png"
-    },
-    "school": {
-      "image": "https://assets.chatvisualnovel.com/00068-792831435.png"
+    "courtroom": {
+      "image": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/images/places/ace_attorney/courtroom.webp",
+      "bgm": "https://chatvisualnovelassets.s3.us-west-2.amazonaws.com/music/Ace+Attorney+-+03+Ace+Attorney+-+Trial.mp3"
     }
   },
   "imageSettings": {
-    "left": "50%",
-    "transform": "translate(-50%, 0)",
     "bottom": "100%",
-    "maxWidth": "70vw",
-    "maxHeight": "70vh"
-  },
-  "tts": {
-    "default": {
-      "method": "HuggingFaceSpace",
-      "url": "https://plachta-vits-umamusume-voice-synthesizer.hf.space",
-      "ws": {
-        "url": "wss://plachta-vits-umamusume-voice-synthesizer.hf.space/queue/join",
-        "data": ["text", "voice", "localeLanguage", "speed", "phonemeInput"]
-      },
-      "voices": {
-        "male": ["重云 Chongyun (Genshin Impact)"],
-        "female": [
-          "甘雨 Ganyu (Genshin Impact)",
-          "宵宫 Yoimiya (Genshin Impact)",
-          "珊瑚宫心海 Sangonomiya Kokomi (Genshin Impact)"
-        ]
-      }
-    }
+    "maxWidth": "100vw",
+    "maxHeight": "100vh"
   }
 }
